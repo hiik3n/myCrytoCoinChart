@@ -46,9 +46,18 @@
 		You’ll notice the prompt is slightly different – the # has changed to a >. This indicates you’re no longer using a Super User account.
 		grant all privileges on database <dbname> to <username> ;
 
-*adminer
+* adminer
+
 		default user:postgres
 
+* grafana
+
+			SELECT 
+			  $__time(timestamp),
+			  bid_value as value
+			from remitano
+			where
+			  currency_type = 'eth'
 
 ## Tutorial:
 * Tutorial 1
