@@ -7,10 +7,10 @@
 
 * [x] Database to store data
 	* [x] mySQLite (Grafana does not support)
-	* [ ] postgres (psycopg2)
+	* [x] postgres (psycopg2)
 
 * [ ] Display data
-	* [ ] Grafana
+	* [x] Grafana
 
 ## Implementation:
 ![data/flow01.png](data/flow01.png)
