@@ -1,0 +1,12 @@
+#note
+CREATE TABLE "remitano" (
+  "id" serial NOT NULL,
+  "currency_type" text NOT NULL,
+  "crypto_type" text NOT NULL,
+  "ask_value" integer NOT NULL,
+  "bid_value" integer NOT NULL,
+  "timestamp" integer NOT NULL
+);
+
+INSERT INTO "remitano" ("currency_type", "crypto_type", "ask_value", "bid_value", "timestamp")
+VALUES ('VND', 'eth', '1000', '10000', '1515946640');

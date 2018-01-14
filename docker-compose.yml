@@ -1,0 +1,48 @@
+version: '2'
+
+services:
+
+    postgresql:
+        restart: always
+        image: postgres
+        ports:
+        - 5432:5432
+        volumes:
+            - ./data/pgdata:/var/lib/postgresql/data
+        environment:
+            - POSTGRES_PASSWORD:= 'pwd'
+            # - DB_USER=grafana
+            # - DB_PASS=grafana
+            # - DB_NAME=gitlabhq_production
+            # - DB_EXTENSION=pg_trgm
+
+    adminer:
+        image: adminer
+        restart: always
+        ports:
+            - 8081:8080
+
+
+    grafana:
+        restart: always
+        image: grafana/grafana
+        ports:
+        - 3000:3000
+        # environment:
+        # - GF_SECURITY_ADMIN_PASSWORD=password #Make sure to set it to unique value and keep it secure
+        # - GF_INSTALL_PLUGINS=grafana-clock-panel,grafana-piechart-panel,grafana-simple-json-datasource,cloudflare-app,mtanda-histogram-panel,mtanda-heatmap-epoch-panel,natel-plotly-panel
+        # - GF_SMTP_ENABLED=true
+        # - GF_SMTP_HOST=mail.example.com:25 # Set it to the hostname of your email server
+        # - GF_SMTP_FROM_ADDRESS=gitlab@example.com # This is a from address for your Grafana server
+        # - GF_SERVER_DOMAIN=grafana.example.com # Your Grafana server hostname
+        # - GF_SERVER_ROOT_URL=https://grafana.example.com/ #URL to access your Grafana server
+        # - GF_SERVER_ENFORCE_DOMAIN=true
+        # - GF_USERS_ALLOW_SIGN_UP=false
+        # depends_on:
+        # - prometheus-server
+        links:
+        - postgresql
+        # volumes:
+        # - ./grafana/lib:/var/lib/grafana:Z
+        # - ./grafana/log:/var/log/grafana:Z
+

@@ -1,7 +1,8 @@
 import time
+import sys
 import logging
 from src.remitano_scraper import RemitanoScraper
-from src.my_sqlite_connector import RemitanoDBConnector
+from src.my_postgres_connector import RemitanoPostGresConnector
 
 logging.basicConfig(
     # filename="test.log",
@@ -12,11 +13,13 @@ logging.basicConfig(
 print("Hello World")
 
 remitanoScraper = RemitanoScraper()
-dbConnector = RemitanoDBConnector()
+dbConnector = RemitanoPostGresConnector()
+if dbConnector.connect() is None:
+    sys.exit(1)
 
 while 1:
     vnValue = remitanoScraper.get_vn_value()
     if vnValue is not None:
         logging.info("ETH_ASK=%s" % vnValue['eth_ask'])
         dbConnector.insert_data(vnValue)
-    time.sleep(30)
+    time.sleep(60)
