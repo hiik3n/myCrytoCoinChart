@@ -38,8 +38,9 @@ class CoinMarketCapClient(object):
         if _coinDict is None:
             return None
         else:
-            return {'currency': 'USD',
-                    'crypto_type': 'eth',
+            ### There is error crypto_type and currency_type
+            return {'crypto_type': 'USD',
+                    'currency': 'eth',
                     'eth_bid': _coinVal,
                     'eth_ask': _coinVal
                     }

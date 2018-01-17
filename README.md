@@ -34,6 +34,17 @@ There is no graph for the change of price over time on Remitano page. Grafana is
 		tmux kill-session -t session_name
 		tmux a attach last session
 
+* there a error @ (miss between currency_type and crypto_type)
+
+		_records_insert_sql = """\
+		INSERT INTO "%s" ("currency_type", "crypto_type", "ask_value", "bid_value", "timestamp") \
+		VALUES ('%s', '%s', %s, %s, %s)"""
+
+		self._insert_remitano_records(_crypto, _currencyType,
+                                              record_dict['%s_ask' % _crypto],
+                                              record_dict['%s_bid' % _crypto],
+                                              _timestamp)
+
 ## Tutorial:
 * Tutorial 1
 	

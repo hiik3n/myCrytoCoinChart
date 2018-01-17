@@ -30,5 +30,5 @@ while 1:
     if cmcValue is not None:
         logging.info("ETH_ASK=%s" % cmcValue['eth_ask'])
         dbConnector.insert_data(cmcValue)
-        
+
     time.sleep(60)
