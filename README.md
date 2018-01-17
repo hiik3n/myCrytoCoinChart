@@ -34,7 +34,7 @@ There is no graph for the change of price over time on Remitano page. Grafana is
 		tmux kill-session -t session_name
 		tmux a attach last session
 
-* there a error @ (miss between currency_type and crypto_type)
+* there a error @ (miss between currency_type and crypto_type) in postgre insert cmd
 
 		_records_insert_sql = """\
 		INSERT INTO "%s" ("currency_type", "crypto_type", "ask_value", "bid_value", "timestamp") \

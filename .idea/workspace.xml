@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="75c3bc09-2aca-4d73-a26b-de87a46f2b92" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/coinmarketcap_client.py" afterPath="$PROJECT_DIR$/src/coinmarketcap_client.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/my_postgres_connector.py" afterPath="$PROJECT_DIR$/src/my_postgres_connector.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="coinmarketcap_client.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="coinmarketcap_client.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/coinmarketcap_client.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="42" column="38" lean-forward="true" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
+            <state relative-caret-position="117">
+              <caret line="39" column="13" lean-forward="false" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -39,11 +39,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="36" column="84" lean-forward="false" selection-start-line="36" selection-start-column="84" selection-end-line="36" selection-end-column="84" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="my_postgres_connector.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/my_postgres_connector.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="63" column="33" lean-forward="true" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
+            <state relative-caret-position="166">
+              <caret line="51" column="23" lean-forward="true" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
                 <element signature="e#802#903#0" expanded="false" />
@@ -91,8 +101,9 @@
         <option value="$PROJECT_DIR$/src/test_pgdb.py" />
         <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/src/my_postgres_connector.py" />
         <option value="$PROJECT_DIR$/src/coinmarketcap_client.py" />
+        <option value="$PROJECT_DIR$/src/my_postgres_connector.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -342,7 +353,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/requests/api.py" />
     <entry file="file://$PROJECT_DIR$/src/lxml/html/tests/__init__.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/requests/sessions.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/requests/models.py" />
@@ -653,8 +663,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/my_postgres_connector.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="63" column="33" lean-forward="true" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
+        <state relative-caret-position="166">
+          <caret line="51" column="23" lean-forward="true" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
             <element signature="e#802#903#0" expanded="false" />
@@ -664,11 +674,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/coinmarketcap_client.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="42" column="38" lean-forward="true" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
+        <state relative-caret-position="117">
+          <caret line="39" column="13" lean-forward="false" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="36" column="84" lean-forward="false" selection-start-line="36" selection-start-column="84" selection-end-line="36" selection-end-column="84" />
+          <folding />
         </state>
       </provider>
     </entry>

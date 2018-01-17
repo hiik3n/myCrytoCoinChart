@@ -49,7 +49,7 @@ VALUES ('%s', '%s', %s, %s, %s)"""
         _timestamp = round(time.time())
         try:
             _currencyType = record_dict['currency']
-        except KeyError as e:
+        except KeyError:
             self.logger.warning("Cannot find currency in data %s" % repr(record_dict))
             return None
 
