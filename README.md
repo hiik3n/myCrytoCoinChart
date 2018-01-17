@@ -1,5 +1,5 @@
 # myCrytoCoinChart
-
+There is no graph for the change of price over time on Remitano page. Grafana is used to display these data.
 
 ## To-do:
 * [x] Parse data from remitano wesite
