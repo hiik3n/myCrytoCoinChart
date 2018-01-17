@@ -6,14 +6,15 @@
 	* [x] Regex pattern
 
 * [x] Database to store data
-	* [x] mySQLite (Grafana does not support)
 	* [x] postgres (psycopg2)
 
-* [ ] Display data
-	* [x] Grafana
+* [x] Display data
+	* [x] Grafana (https://github.com/hiik3n/myPostgresGrafana)
 
 ## Implementation:
 ![data/flow01.png](data/flow01.png)
+
+![data/graph01.png](data/graph01.png)
  
 
 ## Note:
@@ -33,42 +34,6 @@
 		tmux kill-session -t session_name
 		tmux a attach last session
 
-* postgres
-		
-		docker exec -ti -u prosgres container_name bash
-		postgres -V
-		psql postgres
-		\du	#list user
-		\q # quits
-		CREATE ROLE username WITH LOGIN PASSWORD 'quoted password'
-		CREATE DATABASE databasename;
-		psql postgres -U patrick
-		You’ll notice the prompt is slightly different – the # has changed to a >. This indicates you’re no longer using a Super User account.
-		grant all privileges on database <dbname> to <username> ;
-
-* adminer
-
-		default user:postgres
-
-* grafana
-
-			SELECT 
-			  $__time(timestamp),
-			  bid_value as value
-			from remitano
-			where
-			  currency_type = 'eth'
-
 ## Tutorial:
 * Tutorial 1
-
-	https://www.sitepoint.com/getting-started-sqlite3-basic-commands/
-
-	http://stackabuse.com/a-sqlite-tutorial-with-python/
-
-	https://wiki.postgresql.org/wiki/Psycopg2_Tutorial
-	https://pythonspot.com/python-database-postgresql/
-	https://medium.com/@beld_pro/quick-tip-creating-a-postgresql-container-with-default-user-and-password-8bb2adb82342
-
-	https://www.cybertec-postgresql.com/en/announcing-pgwatch2-a-simple-but-versatile-postgresql-monitoring-tool/
-
+	
