@@ -1,6 +1,10 @@
 .DS_Store
 .idea/
+<<<<<<< HEAD
 *.pyc
+=======
+data/pgdata/
+>>>>>>> 04acafa64a27599516ae549c4698d3bf952e7354
 *.db
 # Byte-compiled / optimized / DLL files
 __pycache__/
