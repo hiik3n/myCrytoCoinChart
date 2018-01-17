@@ -7,7 +7,8 @@ from config import *
 
 class RemitanoPostGresConnector(object):
 
-    tracked_cryptos = ['btc', 'eth', 'usdt']
+    # tracked_cryptos = ['btc', 'eth', 'usdt']
+    tracked_cryptos = ['eth']
 
     def __init__(self):
         self.logger = logging.getLogger()
@@ -54,6 +55,7 @@ VALUES ('%s', '%s', %s, %s, %s)"""
 
         for _crypto in self.tracked_cryptos:
             try:
+
                 self._insert_remitano_records(_crypto, _currencyType,
                                               record_dict['%s_ask' % _crypto],
                                               record_dict['%s_bid' % _crypto],
